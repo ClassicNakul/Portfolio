@@ -134,6 +134,7 @@ html,body{
     box-shadow: 10px 10px 20px 1px rgb(0 0 0 / 80%);
     margin-bottom: 20px;
     margin-left: 12em;
+    padding: .3em;
 }
 .img{
     margin-left: 65%;
