@@ -11,7 +11,7 @@ html,body{
     opacity: 1;
     position: absolute;
 }
-.image{
+#image{
     background: url(ME.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -114,7 +114,7 @@ html,body{
     font-family: 'Croissant One', cursive;
     font-weight: 700;
     margin-top: 10px;
-    margin-left: 11em;
+    margin-left: 10em;
 }
 .detail{
     font-size: 20px;
@@ -126,14 +126,14 @@ html,body{
 .ct{
     font-size: 30px;
     color: #000000;
-    border: 3px solid black;
+    border: 2px solid black;
     font-weight: 700;
     font-family: 'Dancing Script', cursive;
     border-radius: 10px;
     display: inline-flex;
     box-shadow: 10px 10px 20px 1px rgb(0 0 0 / 80%);
     margin-bottom: 20px;
-    margin-left: 12em;
+    margin-left: 11em;
     padding: .3em;
 }
 .img{
