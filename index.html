@@ -18,6 +18,7 @@
     <link rel="website icon" type="png" href="icon.png">
 </head>
 <body>
+    <div id="load"></div>
         <header class="header">
             <a href="#" class="ng">NG</a>
         
@@ -37,7 +38,13 @@
             <div>
                 <a href="more.html" class="btn">MORE</a>
             </div>
-            
         </div>
+
+        <script>
+            var loader = document.getElementById("load");
+            window.addEventListener("load", function (){
+            loader.style.display = "none";
+    })
+        </script>
 </body>
 </html> 
