@@ -104,7 +104,7 @@ html,body{
     
 }
 .border{
-    border: 3px linear-gradient(to bottom left, #191D6C 0%, rgb(208, 14, 182) 49.48%, rgba(0, 224, 255, 0.47) 99.98%, rgba(236, 238, 15, 0.49) 99.99%, rgba(255, 0, 229, 0.00) 100%);;
+    border: 3px linear-gradient(to bottom left, #191D6C 0%, rgb(208, 14, 182) 49.48%, rgba(0, 224, 255, 0.47) 99.98%, rgba(236, 238, 15, 0.49) 99.99%, rgba(255, 0, 229, 0.00) 100%);
     box-shadow: 10px 10px 20px 1px rgb(0 0 0 / 80%);
     margin-left: 5em;
     border-radius: 12px;
@@ -126,7 +126,7 @@ html,body{
 .ct{
     font-size: 30px;
     color: #000000;
-    border: 2px solid black;
+    border: 1px solid black; 
     font-weight: 700;
     font-family: 'Dancing Script', cursive;
     border-radius: 10px;
@@ -135,6 +135,10 @@ html,body{
     margin-bottom: 20px;
     margin-left: 11em;
     padding: .3em;
+}
+.ct:hover{
+    border: 1px none;
+
 }
 .img{
     margin-left: 65%;
@@ -146,4 +150,7 @@ html,body{
     text-align: center;
     font-size: 30px;
 }
-
+.AI{
+    padding-left: 72em;
+    padding-top: 18em;
+}
