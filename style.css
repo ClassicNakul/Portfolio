@@ -11,15 +11,6 @@ html,body{
     opacity: 1;
     position: absolute;
 }
-#image{
-    background: url(ME.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 85em;
-    height: 100%;
-    width: 100%;
-    opacity: .3;
-}
 .header{
     position: absolute;
     top: 0;
@@ -32,18 +23,18 @@ html,body{
 .ng{
     font-size: 60px;
     font-weight: 700;
-    color: #ffffff;
+    color: #000000;
     font-family: Rubik Puddles;
 }
 .ng:hover{
-    color: #000000;
+    color: #ffffff;
     transition: 0.5s;
 }
 .navbar a{
     font-size: 25px;
     font-weight: 700;
     color: #ffffff;
-    font-family: serif;
+    font-family: 'Outfit', sans-serif;
     position: relative;
     display: inline-flex;
     margin: 10px 20px;
@@ -53,10 +44,7 @@ html,body{
     transition: 0.3s;
 }
 .cv {
-    font-size: 25px;
-    color: #ffffff;
     font-weight: 500;
-    font-family: serif;
     border-radius: 105px;
     padding: 9px 10px;
     border: 2px solid #000000;
@@ -70,21 +58,21 @@ html,body{
     padding: 18em 0em 0em 2em;
 }
 .cont1{
-    font-family: Black Han Sans;
+    font-family: 'Pixelify Sans', cursive;
     font-size: 50px ;
-    color: #ffffff;
+    color: #000000;
     font-weight: 700;
 }
 .cont2{
     font-size: 30px;
-    font-family: cursive;
+    font-family: 'Lobster', cursive;
     margin-top: -5px;
-    color: #ffffff;
+    color: #000000;
     font-weight: 700;
 }
 .btn{
     font-size: 30px;
-    font-family: serif;
+    font-family: 'Dosis', sans-serif;
     font-weight: 700;
     color: #ffffff;
     background-color: #000000;
@@ -138,7 +126,6 @@ html,body{
 }
 .ct:hover{
     border: 1px none;
-
 }
 .img{
     margin-left: 65%;
