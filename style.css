@@ -96,7 +96,7 @@ html,body{
 }
 .contact{
     padding: 15em 40em 0em 0em;
-    
+    text-align: justify;
 }
 .border{
     border: 3px linear-gradient(to bottom left, #191D6C 0%, rgb(208, 14, 182) 49.48%, rgba(0, 224, 255, 0.47) 99.98%, rgba(236, 238, 15, 0.49) 99.99%, rgba(255, 0, 229, 0.00) 100%);
@@ -139,10 +139,25 @@ html,body{
     margin-top: 13em;
     position: absolute;
 }
-.story{
+.about{
     margin: 10em 25px;
-    text-align: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px 1px rgb(0 0 0 / 80%);
+    border: 3px linear-gradient(to bottom left, #191D6C 0%, rgb(208, 14, 182) 49.48%, rgba(0, 224, 255, 0.47) 99.98%, rgba(236, 238, 15, 0.49) 99.99%, rgba(255, 0, 229, 0.00) 100%);
+}
+#sory{
     font-size: 30px;
+    font-family: 'Tilt Prism', cursive;
+}
+.para{
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+#me{
+    width: 50vh;
+    height: 40vh;
+    display: inline-flex;
+
 }
 .AI{
     padding-left: 72em;
