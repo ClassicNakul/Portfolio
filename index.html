@@ -43,8 +43,10 @@
         <script>
             var loader = document.getElementById("load");
             window.addEventListener("load", function (){
-            loader.style.display = "none";
-            })
+              setTimeout(function(){
+                loader.style.display = "none";
+              }, 2000); // 3000 milliseconds = 3 seconds
+        })
         </script>
 </body>
 </html> 
