@@ -139,7 +139,7 @@ html,body{
     position: absolute;
 }
 .about{
-    margin: 10em 25px;
+    margin: 8em 25px;
     border-radius: 15px;
     position: absolute;
     box-shadow: 10px 10px 20px 1px rgb(0 0 0 / 80%);
@@ -159,7 +159,8 @@ html,body{
 #me{
     width: 50vh;
     height: 40vh;
-    margin-left: 65em;
+    margin-left: 70em;
+
 }
 .AI{
     text-align: center;
