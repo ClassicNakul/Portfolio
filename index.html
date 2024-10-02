@@ -12,41 +12,109 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap" rel="stylesheet">
-
     
-        <title>Nakul Goyal</title>
+    <title>Nakul Goyal</title>
     <link rel="website icon" type="png" href="/assets/icon.png">
 </head>
 <body>
-    <div id="load"></div>
+    <div id="load" class="loader"></div>
+
+    <div id="particles-js">
+
         <header class="header">
             <a href="#" class="ng">NG</a>
-        
-        <div class="navbar">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="https://drive.google.com/file/d/1QNP3QMHLdPe71b8yzoC5amRLP-npvaI1/view?usp=sharing" class="cv" target="_blank">Resume</a>
-        </div>
+            <div class="navbar">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://drive.google.com/file/d/1QNP3QMHLdPe71b8yzoC5amRLP-npvaI1/view?usp=sharing" class="cv" target="_blank">Resume</a>
+            </div>
         </header>
         <div class="content">
             <div class="cont1">
                 Hi,<br>I'm Nakul
             </div> 
-            <div class="cont2">
-                Web Developer and Designer<br>Majoring in Computer Science..
+            <div id="cont2" class="cont2">
             </div>
             <div>
                 <a href="more.html" class="btn">MORE</a>
             </div>
         </div>
+    </div>
 
-        <script>
-            var loader = document.getElementById("load");
-            window.addEventListener("load", function (){
-              setTimeout(function(){
-                loader.style.display = "none";
-              }, 2000); // 2000 milliseconds = 2 seconds
-        })
-        </script>
+    <!-- Particles.js script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false
+                },
+                "size": {
+                    "value": 3,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none"
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+    <script>
+        // Wait for the window to load before hiding the loader
+    window.addEventListener("load", function () {
+    // Select the loader element
+    var loader = document.getElementById("load");
+    // Check if the loader exists
+    if (loader) {
+        // Hide the loader after 2 seconds
+        setTimeout(function () {
+            loader.style.display = "none";
+        }, 2000); // Adjust the time as needed (2000ms = 2 seconds)
+    }
+});
+
+    </script>
+    <script src="main.js"></script> 
 </body>
-</html> 
+</html>

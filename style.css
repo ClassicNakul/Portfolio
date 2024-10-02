@@ -10,22 +10,37 @@ html,body{
     width: 100%;
     opacity: 1;
     position: absolute;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
 }
-#load{
-    background: black url(/assets/load.gif) no-repeat center center;
-    height: 100vh;
+#particles-js {
+    position: relative;
     width: 100%;
-    position: fixed;
-    z-index: 100;
+    height: 100vh; /* Full-screen height */
+    overflow: hidden;
+}
+.loader {
+    background: black url(/assets/load.gif) no-repeat center center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 100; /* Make sure it's on top */
+    transform: translate(-50%, -50%);
 }
 .header{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 40px;
     display: flex;
     justify-content: space-between;
+    display: flex;
+    color: white;
+    padding: 10px 20px;
+    z-index: 2; /* Ensure header is above the particles */
 }
 .ng{
     font-size: 60px;
@@ -45,6 +60,8 @@ html,body{
     position: relative;
     display: inline-flex;
     margin: 10px 20px;
+    padding: 14px 20px;
+    text-decoration: none;
 }
 .navbar a:hover{
     color: #000000;
@@ -62,7 +79,15 @@ html,body{
     transition: 0.5s;
 }
 .content{
-    padding: 18em 0em 0em 2em;
+
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure content is above the particles */
 }
 .cont1{
     font-family: 'Pixelify Sans', cursive;
@@ -94,14 +119,84 @@ html,body{
     background-color: #ffffff;
     transition: 0.5s;
 }
+@media screen and (max-width: 768px) {
+    .cont1 {
+        font-size: 40px;
+    }
+
+    .cont2 {
+        font-size: 25px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar a {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        padding: 80px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cont1 {
+        font-size: 30px;
+    }
+
+    .cont2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 5px 10px;
+    }
+
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .contact{
     padding: 15em 40em 0em 0em;
     text-align: justify;
+    opacity: 0; /* Start as invisible */
+    animation: fadeIn 1s ease-in-out forwards; /* Fade in animation */
+    animation-delay: 0.5s; /* Add a delay to make the animation smoother */
+}
+.head h1 {
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.3s;
 }
 .border{
     border: 3px linear-gradient(to bottom left, #191D6C 0%, rgb(208, 14, 182) 49.48%, rgba(0, 224, 255, 0.47) 99.98%, rgba(236, 238, 15, 0.49) 99.99%, rgba(255, 0, 229, 0.00) 100%);
     box-shadow: 10px 10px 20px 1px rgb(0 0 0 / 80%);
     margin-left: 5em;
+    width: 100%;
+    padding: 15px;
     border-radius: 12px;
 }
 .head{ 
@@ -116,6 +211,8 @@ html,body{
     padding: 10px 0em 1em 10px;
     font-family: cursive;
     font-weight: 700;
+    animation: fadeIn 1.2s ease-in-out forwards;
+    animation-delay: 0.5s;
 }
 .ct{
     font-size: 30px;
@@ -124,19 +221,23 @@ html,body{
     font-weight: 700;
     font-family: 'Dancing Script', cursive;
     border-radius: 10px;
-    display: inline-flex;
     box-shadow: 10px 10px 20px 1px rgb(0 0 0 / 80%);
     margin-bottom: 20px;
     margin-left: 11em;
-    padding: .3em;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: transform 0.3s;
+    text-decoration: none;
 }
 .ct:hover{
-    border: 1px none;
+    transform: translateY(-5px); /* Hover effect */
 }
 .img{
     margin-left: 65%;
     margin-top: 13em;
     position: absolute;
+    max-width: 100%; /* Make sure image fits the mobile screen */
+        height: auto;
 }
 .about{
     margin: 8em 25px;
