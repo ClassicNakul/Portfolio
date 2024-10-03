@@ -14,7 +14,7 @@ var typeWriterEffect = function (elementId, text, speed) {
                     i = 0; // Reset index to start typing again
                     typeWriter(); // Start the typing effect again
                 }
-            }, 1500); // Delay before restarting the typing effect (1 second)
+            }, 1500); // Delay before restarting the typing effect (1.5 second)
         }
     };
     // Clear any existing text first and start the typing effect
